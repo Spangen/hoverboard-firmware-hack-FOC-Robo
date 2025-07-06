@@ -697,8 +697,8 @@
 #endif
 #if defined(FEEDBACK_SERIAL_USART2) || defined(CONTROL_SERIAL_USART2) || defined(DEBUG_SERIAL_USART2) || defined(SIDEBOARD_SERIAL_USART2)
   #ifndef USART2_BAUD
-    // #define USART2_BAUD           115200                  // UART2 baud rate (long wired cable)
-    #define USART2_BAUD           57600                  // UART2 baud rate (long wired cable)
+    #define USART2_BAUD           115200                  // UART2 baud rate (long wired cable)
+    // #define USART2_BAUD           57600                  // UART2 baud rate (long wired cable)
   #endif
   #define USART2_WORDLENGTH       UART_WORDLENGTH_8B      // UART_WORDLENGTH_8B or UART_WORDLENGTH_9B
 #endif

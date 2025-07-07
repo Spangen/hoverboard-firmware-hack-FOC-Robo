@@ -78,8 +78,6 @@
 #define BAT_CALIB_ADC           1525      // f/r compromise, adc-value measured by mainboard (value nr 5 on UART debug output)
 // #define BAT_CALIB_ADC           1520      // front, adc-value measured by mainboard (value nr 5 on UART debug output)
 // #define BAT_CALIB_ADC           1530      // rear, adc-value measured by mainboard (value nr 5 on UART debug output)
-// #define BAT_CALIB_ADC           1520      // front, adc-value measured by mainboard (value nr 5 on UART debug output)
-// #define BAT_CALIB_ADC           1530      // rear, adc-value measured by mainboard (value nr 5 on UART debug output)
 #define BAT_CELLS               10        // ROBO battery number of cells. Normal Hoverboard battery: 10s
 #define BAT_LVL2_ENABLE         2         // to beep or not to beep, 1 or 0
 #define BAT_LVL1_ENABLE         1         // to beep or not to beep, 1 or 0

@@ -74,8 +74,10 @@
  * Then you can verify voltage on debug output value 6 (to get calibrated voltage multiplied by 100).
 */
 #define BAT_FILT_COEF           655       // battery voltage filter coefficient in fixed-point. coef_fixedPoint = coef_floatingPoint * 2^16. In this case 655 = 0.01 * 2^16
-#define BAT_CALIB_REAL_VOLTAGE  3970      // input voltage measured by multimeter (multiplied by 100). In this case 43.00 V * 100 = 4300
-#define BAT_CALIB_ADC           1492      // adc-value measured by mainboard (value nr 5 on UART debug output)
+// #define BAT_CALIB_REAL_VOLTAGE  3970      // input voltage measured by multimeter (multiplied by 100). In this case 43.00 V * 100 = 4300
+// #define BAT_CALIB_ADC           1492      // adc-value measured by mainboard (value nr 5 on UART debug output)
+#define BAT_CALIB_REAL_VOLTAGE  3500      // input voltage measured by multimeter (multiplied by 100). In this case 43.00 V * 100 = 4300
+#define BAT_CALIB_ADC           1562      // adc-value measured by mainboard (value nr 5 on UART debug output)
 #define BAT_CELLS               10        // ROBO battery number of cells. Normal Hoverboard battery: 10s
 #define BAT_LVL2_ENABLE         0         // to beep or not to beep, 1 or 0
 #define BAT_LVL1_ENABLE         0         // to beep or not to beep, 1 or 0
@@ -179,7 +181,7 @@
 // Default settings will be applied at the end of this config file if not set before
 #define ENABLE_TIMEOUT            3       // Seconds of not driving will enable=0 for power saving and freewheeling	//YOU
 #define INACTIVITY_TIMEOUT        20       // Minutes of not driving until poweroff. it is not very precise.
-#define BEEPS_BACKWARD            1       // 0 or 1
+#define BEEPS_BACKWARD            0       // 0 or 1
 #define ADC_MARGIN                100     // ADC input margin applied on the raw ADC min and max to make sure the MIN and MAX values are reached even in the presence of noise
 #define ADC_PROTECT_TIMEOUT       100     // ADC Protection: number of wrong / missing input commands before safety state is taken
 #define ADC_PROTECT_THRESH        200     // ADC Protection threshold below/above the MIN/MAX ADC values

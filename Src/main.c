@@ -659,11 +659,25 @@ int main(void) {
         #if defined(DEBUG_SERIAL_PROTOCOL)
           process_debug();
         #else
-          printf("in1:%i in2:%i cmdL:%i cmdR:%i BatADC:%i BatV:%i TempADC:%i Temp:%i \r\n",
+          // printf("in1:%i in2:%i cmdL:%i cmdR:%i BatADC:%i BatV:%i TempADC:%i Temp:%i \r\n",
+          //   input1[inIdx].raw,        // 1: INPUT1
+          //   input2[inIdx].raw,        // 2: INPUT2
+          //   cmdL,                     // 3: output command: [-1000, 1000]
+          //   cmdR,                     // 4: output command: [-1000, 1000]
+          //   adc_buffer.batt1,         // 5: for battery voltage calibration
+          //   batVoltageCalib,          // 6: for verifying battery voltage calibration
+          //   board_temp_adcFilt,       // 7: for board temperature calibration
+          //   board_temp_deg_c);        // 8: for verifying board temperature calibration
+          // printf("iOdomL:%i iOdomR:%i in1:%i in2:%i cmdL:%i cmdR:%i iAmpL:%i iAmpR:%i BatADC:%i BatV:%i TempADC:%i Temp:%i \r\n",
+          printf("iOdomL:%5ld iOdomR:%5ld in1:%5i in2:%5i cmdL:%5i cmdR:%5i iAmpL:%4i iAmpR:%4i BatADC:%i BatV:%i TempADC:%i Temp:%i \r\n",
+            -iOdomL,                   //
+            iOdomR,                   //
             input1[inIdx].raw,        // 1: INPUT1
             input2[inIdx].raw,        // 2: INPUT2
             cmdL,                     // 3: output command: [-1000, 1000]
             cmdR,                     // 4: output command: [-1000, 1000]
+            curL_DC,                   //
+            curR_DC,                   //
             adc_buffer.batt1,         // 5: for battery voltage calibration
             batVoltageCalib,          // 6: for verifying battery voltage calibration
             board_temp_adcFilt,       // 7: for board temperature calibration

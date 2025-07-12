@@ -77,7 +77,7 @@
 // #define BAT_CALIB_REAL_VOLTAGE  3970      // input voltage measured by multimeter (multiplied by 100). In this case 43.00 V * 100 = 4300
 // #define BAT_CALIB_ADC           1492      // adc-value measured by mainboard (value nr 5 on UART debug output)
 #define BAT_CALIB_REAL_VOLTAGE  3500      // input voltage measured by multimeter (multiplied by 100). In this case 43.00 V * 100 = 4300
-#define BAT_CALIB_ADC           1562      // adc-value measured by mainboard (value nr 5 on UART debug output)
+#define BAT_CALIB_ADC           1380      // adc-value measured by mainboard (value nr 5 on UART debug output)
 #define BAT_CELLS               10        // ROBO battery number of cells. Normal Hoverboard battery: 10s
 #define BAT_LVL2_ENABLE         0         // to beep or not to beep, 1 or 0
 #define BAT_LVL1_ENABLE         0         // to beep or not to beep, 1 or 0

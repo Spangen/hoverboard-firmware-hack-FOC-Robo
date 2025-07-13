@@ -157,7 +157,7 @@
 #define DIAG_ENA        1               // [-] Motor Diagnostics enable flag: 0 = Disabled, 1 = Enabled (default)
 
 // Limitation settings
-#define I_MOT_MAX       10              // [A] Maximum single motor current limit
+#define I_MOT_MAX       12              // [A] Maximum single motor current limit
 #define I_DC_MAX        14              // [A] Maximum stage2 DC Link current limit for Commutation and Sinusoidal types (This is the final current protection. Above this value, current chopping is applied. To avoid this make sure that I_DC_MAX = I_MOT_MAX + 2A)
 #define N_MOT_MAX       500            // [rpm] Maximum motor speed limit
 // #define I_MOT_MAX       2              // [A] Maximum single motor current limit
@@ -184,7 +184,7 @@
 // Default settings will be applied at the end of this config file if not set before
 #define ENABLE_TIMEOUT            3600       // Seconds of not driving will enable=0 for power saving and freewheeling	//YOU
 #define INACTIVITY_TIMEOUT        120       // Minutes of not driving until poweroff. it is not very precise.
-#define BEEPS_BACKWARD            0       // 0 or 1
+#define BEEPS_BACKWARD            1       // 0 or 1
 #define ADC_MARGIN                100     // ADC input margin applied on the raw ADC min and max to make sure the MIN and MAX values are reached even in the presence of noise
 #define ADC_PROTECT_TIMEOUT       100     // ADC Protection: number of wrong / missing input commands before safety state is taken
 #define ADC_PROTECT_THRESH        200     // ADC Protection threshold below/above the MIN/MAX ADC values
@@ -201,7 +201,7 @@
 // #define DEFAULT_SPEED_COEFFICIENT   16384 // Default for SPEED_COEFFICIENT 1.0f [-] higher value == stronger. [0, 65535] = [-2.0 - 2.0]. In this case 16384 = 1.0 * 2^14
 // #define DEFAULT_STEER_COEFFICIENT   8192  // Defualt for STEER_COEFFICIENT 0.5f [-] higher value == stronger. [0, 65535] = [-2.0 - 2.0]. In this case  8192 = 0.5 * 2^14. If you do not want any steering, set it to 0.
 #define DEFAULT_RATE                480   // 30.0f [-] lower value == slower rate [0, 32767] = [0.0, 2047.9375]. Do NOT make rate negative (>32767)
-#define DEFAULT_FILTER              1638  // Default for FILTER 0.1f [-] lower value == softer filter [0, 65535] = [0.0 - 1.0].
+#define DEFAULT_FILTER              1638  // Good for VLT Mode
 #define DEFAULT_SPEED_COEFFICIENT   16384 // Default for SPEED_COEFFICIENT 1.0f [-] higher value == stronger. [0, 65535] = [-2.0 - 2.0]. In this case 16384 = 1.0 * 2^14
 #define DEFAULT_STEER_COEFFICIENT   8192  // Defualt for STEER_COEFFICIENT 0.5f [-] higher value == stronger. [0, 65535] = [-2.0 - 2.0]. In this case  8192 = 0.5 * 2^14. If you do not want any steering, set it to 0.
 // ######################### END OF DEFAULT SETTINGS ##########################

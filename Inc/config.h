@@ -159,7 +159,8 @@
 // Limitation settings
 #define I_MOT_MAX       12              // [A] Maximum single motor current limit
 #define I_DC_MAX        14              // [A] Maximum stage2 DC Link current limit for Commutation and Sinusoidal types (This is the final current protection. Above this value, current chopping is applied. To avoid this make sure that I_DC_MAX = I_MOT_MAX + 2A)
-#define N_MOT_MAX       500            // [rpm] Maximum motor speed limit
+// #define N_MOT_MAX       500            // [rpm] Maximum motor speed limit
+#define N_MOT_MAX       200            // [rpm] Maximum motor speed limit
 // #define I_MOT_MAX       2              // [A] Maximum single motor current limit
 // #define I_DC_MAX        4              // [A] Maximum stage2 DC Link current limit for Commutation and Sinusoidal types (This is the final current protection. Above this value, current chopping is applied. To avoid this make sure that I_DC_MAX = I_MOT_MAX + 2A)
 // #define N_MOT_MAX       150            // [rpm] Maximum motor speed limit
